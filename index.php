@@ -26,6 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "iptables -A INPUT -s $ip -p tcp --dport $port -m state --state NEW,ESTABLISHED -j ACCEPT\n";
         echo "iptables -A OUTPUT -d $ip -p tcp --sport $port -m state --state ESTABLISHED -j ACCEPT\n";
     }
+    echo "<stron>Autors: Iago Valadez & Alex Serrano\n";
 
     echo "</pre>";
 }
