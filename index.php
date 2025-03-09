@@ -8,6 +8,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['MYSQL'])) $serveis[] = $_POST['MYSQL'];
     if (isset($_POST['SMTP'])) $serveis[] = $_POST['SMTP'];
     if (isset($_POST['POP3'])) $serveis[] = $_POST['POP3'];
+    if (isset($_POST['HTTPS'])) $serveis[] = $_POST['HTTPS'];
+    if (isset($_POST['IMAP'])) $serveis[] = $_POST['IMAP'];
 
     echo "<h2>Comandes IPTABLES 2</h2>";
     echo "<pre>";
