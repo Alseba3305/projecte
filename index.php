@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['HTTPS'])) $serveis[] = $_POST['HTTPS'];
     if (isset($_POST['IMAP'])) $serveis[] = $_POST['IMAP'];
 
-    echo "<h2>Comandes IPTABLES Collados</h2>";
+    echo "<h2>Comandes IPTABLES Collados2</h2>";
     echo "<pre>";
 
     echo "<strong>Bloqueig de totes les connexions INPUT, OUTPUT i FORWARD:</strong>\n";
