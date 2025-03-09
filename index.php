@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['SMTP'])) $serveis[] = $_POST['SMTP'];
     if (isset($_POST['POP3'])) $serveis[] = $_POST['POP3'];
 
-    echo "<h2>Comandes IPTABLES</h2>";
+    echo "<h2>Comandes IPTABLES 2</h2>";
     echo "<pre>";
 
     echo "<strong>Bloqueig de totes les connexions INPUT, OUTPUT i FORWARD:</strong>\n";
@@ -26,7 +26,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "iptables -A INPUT -s $ip -p tcp --dport $port -m state --state NEW,ESTABLISHED -j ACCEPT\n";
         echo "iptables -A OUTPUT -d $ip -p tcp --sport $port -m state --state ESTABLISHED -j ACCEPT\n";
     }
-    echo "<stron>Autors: Iago Valadez & Alex Serrano\n";
+    echo "<pre>";
+    echo "<stron>Autors: Iago & Alex\n";
 
     echo "</pre>";
 }
